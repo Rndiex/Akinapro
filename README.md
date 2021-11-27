@@ -142,7 +142,7 @@ The user is responsible.
 
 [![Run on Repl.it](https://repl.it/badge/github/PYMaster-ft/Akina)](https://replit.com/@cham2003/Akina-QR-code-whatsapp?v=1)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PYMaster-ft/SuperAkina)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Rndiex/Akinapro)
 
 ### The Hard Method
 ```js
