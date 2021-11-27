@@ -23,13 +23,13 @@ Asena.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: 'play song' , dont
         let msg = '```'
         msg +=  `TITLE :${result.title}\n\n`        
         msg += '```'
-         return await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: msg })
+        await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: msg })
         let vsg = '```'
         vsg +=  `VIEWS :${result.views}\n\n`        
         vsg += '```'
-         return await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: vsg })
+        await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: vsg })
         let csg = '```'
         csg +=  `CHANNEL :${result.channel}\n\n`        
         csg += '```'
-         return await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: csg })
+        await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: csg })
         });
