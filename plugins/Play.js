@@ -20,7 +20,7 @@ Asena.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: 'play song' , dont
         if(!status) return await message.sendMessage('*NO RESULT FOUND*')
 	
         await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, { quoted: message.data });
-        let msg = '```'
+        let img = '```'
         msg +=  `TITLE :${result.title}\n\n`        
         msg +=  `VIEWS :${result.views}\n\n`
         msg +=  `CHANNEL :${result.channel}\n\n`        
