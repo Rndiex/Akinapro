@@ -9,7 +9,7 @@ const Axios = require('axios')
 
 Asena.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: 'play song' , dontAddCommandList: true }, async (message, match) => {
 	
-	await message.client.sendMessage(message.jid, '_*Im Searching your song*_  👸🏼 *➾* 🔎' , MessageType.text, { quoted: message.data });
+	await message.client.sendMessage(message.jid, '*wait....*' , MessageType.text, { quoted: message.data });
 	
 	const {data} = await axios(`https://zenzapi.xyz/api/play/playmp3?query=${match[1]}&apikey=whitedevil-terrorboy`)
 	
@@ -22,8 +22,6 @@ Asena.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: 'play song' , dont
         await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, { quoted: message.data });
         let msg = '```'
         msg +=  `TITLE :${result.title}\n\n`        
-        msg +=  `VIEWS :${result.views}\n\n`
-        msg +=  `CHANNEL :${result.channel}\n\n`        
         msg += '```'
-        return await message.client.sendMessage(message.jid, msg, MessageType.text, { quoted: message.data });
+         return await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: msg })
         });
