@@ -529,7 +529,7 @@ await message.client.sendMessage(message.jid, {displayname: "PINKY", vcard: p_lk
     
         var mesaj = '';
         arama.all.map((video) => {
-            mesaj += '*' + video.title + '* - ' + video.url + '\n'
+            mesaj += '🍻 *' + video.title + '* \n🔅 ' + video.url + '\n\n'
         });
 
         await message.client.sendMessage(message.jid,mesaj,MessageType.text);
@@ -1048,6 +1048,26 @@ else if (config.WORKTYPE == 'public') {
                 
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: 'for iphone' + '.mp3', mimetype: 'audio/mpeg', quoted: message.data});
             });
+    }));
+
+    Asena.addCommand({pattern: 'yt ?(.*)', fromMe: true, desc: Lang.YT_DESC}, (async (message, match) => { 
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
+        var reply = await message.client.sendMessage(message.jid,Lang.GETTING_VIDEOS,MessageType.text);
+
+        try {
+            var arama = await yts(match[1]);
+        } catch {
+            return await message.client.sendMessage(message.jid,Lang.NOT_FOUND,MessageType.text);
+        }
+    
+        var mesaj = '';
+        arama.all.map((video) => {
+            mesaj += '🍻 *' + video.title + '* \n🔅 ' + video.url + '\n\n'
+        });
+
+        await message.client.sendMessage(message.jid,mesaj,MessageType.text);
+        await reply.delete();
     }));
 
 
