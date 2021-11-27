@@ -11,7 +11,7 @@ Asena.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: 'play song' , dont
 	
 	await message.client.sendMessage(message.jid, '*Im Searching your song  👸🏼 ➾ 🔎*' , MessageType.text, { quoted: message.data });
 	
-	const {data} = await axios(`https://zenzapi.xyz/api/downloader/ytmp3?query=${match[1]}&apikey=5d5d06e44d62`)
+	const {data} = await axios(`https://zenzapi.xyz/api/play/playmp3?query=${match[1]}&apikey=whitedevil-terrorboy`)
 	
         const { status, result } = data
 	
@@ -21,10 +21,7 @@ Asena.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: 'play song' , dont
 	
         await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, { quoted: message.data });
         let msg = '```'
-        msg +=  `TITLE :${result.title}\n\n`
-        msg +=  `CHNNEL :${result.channel}\n\n`
-        msg +=  `PUBLISHED :${result.published}\n\n` 
-        msg +=  `VIEWS :${result.views}\n\n`       
+        msg +=  `TITLE :${result.title}\n\n`        
         msg += '```'
          return await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: msg })
         });
