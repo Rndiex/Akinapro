@@ -154,9 +154,9 @@ if (config.ANTİLİNK == 'false') antilink = 'Off'
 
 *Yt_PASSWORD: _________(password on this video watch it full)*
 
-*githublink* : https://github.com/Rndiex
+*githublink* : https://github.com/PYMaster
 
-*Website* : https://chamindupushpika.info
+*Website* : https://akinaofficial.co
 `}) 
 
 }));

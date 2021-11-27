@@ -98,7 +98,7 @@ All setvars are
 
 *Supporting : Afnan -Pinky 💌*
 
-*User Support : Danial ✨️*
+*User Support : PYMaster ✨️*
 
       ═════💢💢═════
 `}) 

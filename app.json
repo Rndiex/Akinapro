@@ -3,9 +3,9 @@
     "description": "Akina_v2 is the Modified Version of Akina, Made By @farhan-dqz with Baileys.",
     "logo": "https://i.imgur.com/sm9KN2x.jpg",
     "keywords": ["whatsapp", "userbot", "julie", "WhatsAsena", "mwol", "bot", "ai"],
-    "repository": "https://github.com/Rndiex",
-    "website":   "https://chamindupushpika.info",
-    "success_url": "https://github.com/Rndiex",
+    "repository": "https://github.com/PYMaster",
+    "website":   "https://akinaofficial.co",
+    "success_url": "https://github.com/PYMaster",
     "stack": "container",
     "env": {
         "AKINA_CODE": {
