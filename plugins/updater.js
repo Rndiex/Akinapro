@@ -21,6 +21,15 @@ const Lang = Language.getString('updater');
 
 
 Asena.addCommand({pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC}, (async (message, match) => {
+    var r_text = new Array ();
+    
+    
+    r_text[0] = "https://www.linkpicture.com/q/Akina.jpg";
+    
+    
+    var i = Math.floor(1*Math.random())
+
+    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
     if (commits.total === 0) {
@@ -32,11 +41,11 @@ Asena.addCommand({pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC}, (a
         var degisiklikler = Lang.NEW_UPDATE;
         commits['all'].map(
             (commit) => {
-                degisiklikler += '🔹 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
+                degisiklikler += '🔹' + commit.date.substring(0, 10) + ': \n' + commit.message + ' ⚝➤' + commit.author_name + '➽✓⛨ \n\n';
             }
         );
-        
-        await message.client.sendMessage(
+        // UPDATE IMG ADD
+        await message.client.sendMessage(Buffer(respoimage.data),
             message.jid,
             degisiklikler + '```', MessageType.text
         ); 
