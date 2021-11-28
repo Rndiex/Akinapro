@@ -32,13 +32,13 @@ Asena.addCommand({pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC}, (a
         var degisiklikler = Lang.NEW_UPDATE;
         commits['all'].map(
             (commit) => {
-                degisiklikler += '🔹' + commit.date.substring(0, 10) + ': \n' + commit.message + ' ⚝➤' + commit.author_name + '➽✓⛨ \n\n';
+                degisiklikler += '🔹' + commit.date.substring(0, 10) + ': \n' + commit.message + ' \n⚝➤' + commit.author_name + '➽✓⛨ \n\n';
             }
         );
         // UPDATE IMG ADD
         await message.client.sendMessage(
             message.jid,
-            degisiklikler + '⚝', MessageType.text
+            degisiklikler + '```', MessageType.text
         ); 
     }
 }));
