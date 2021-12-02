@@ -91,7 +91,7 @@ await message.client.sendMessage(message.jid, fs.readFileSync('./Amalserv2/menti
 await message.client.sendMessage(message.jid, fs.readFileSync('Amalserv2/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
         }
         var uri = encodeURI(match[1])
-const array = ['name entha','admin','hi','hello','helo','sex','Hi','mk','moko karanne','gahannada','hiruwa','adarei','huththo','kohomada','bich','na','gemada','apoi','ai']
+const array = ['name entha','admin','hi','hello','gota','gas','ammo','helo','sex','Hi','mk','gotabaya','moko karanne','gahannada','hiruwa','adarei','huththo','kohomada','bich','na','gemada','apoi','ai']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
