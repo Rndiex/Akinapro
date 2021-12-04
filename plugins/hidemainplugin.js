@@ -31,6 +31,6 @@ Amalser.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (a
           headerType: 1
       }
       
-      await message.client.sendMessage(message.jid,fs.readFileSync('./photo/Akina.jpg'), buttonMessage, MessageType.buttonsMessage)
+      await message.client.sendMessage(message.jid, buttonMessage, MessageType.buttonsMessage)
 
 }));
