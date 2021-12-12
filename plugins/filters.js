@@ -58,7 +58,7 @@ await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/mention
 await message.client.sendMessage(message.jid, fs.readFileSync('uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
         }
         
-const array = ['name entha','admin','hi','hello','help','gota','gas','ammo','helo','sex','Hi','mk','gotabaya','moko karanne','gahannada','hiruwa','adarei','huththo','kohomada','bich','na','gemada','apoi','ai']
+const array = ['name entha','admin','hi','hello','help','gota','gas','song','ammo','helo','sex','Hi','mk','gotabaya','moko karanne','gahannada','hiruwa','adarei','huththo','kohomada','bich','na','gemada','apoi','ai']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
@@ -91,7 +91,7 @@ await message.client.sendMessage(message.jid, fs.readFileSync('./Amalserv2/menti
 await message.client.sendMessage(message.jid, fs.readFileSync('Amalserv2/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
         }
         var uri = encodeURI(match[1])
-const array = ['name entha','admin','help','hi','hello','gota','gas','ammo','helo','sex','Hi','mk','gotabaya','moko karanne','gahannada','hiruwa','adarei','huththo','kohomada','bich','na','gemada','apoi','ai']
+const array = ['name entha','admin','help','hi','hello','song','gota','gas','ammo','helo','sex','Hi','mk','gotabaya','moko karanne','gahannada','hiruwa','adarei','huththo','kohomada','bich','na','gemada','apoi','ai']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
@@ -119,7 +119,7 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
     if (!!message.mention && message.mention[0] == '919895828468@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./docpdf/mention.pdf'), MessageType.document, { mimetype: Mimetype.pdf, quoted : message.data, ptt: false})
     }
-const array = ['c2020i','c2012ii','c2012i','c2013ii','c2013i','c2014ii','c2014i','c2015ii','c2015i','c2020ii','c2017ii','c2017i','c2018ii','c2018i','c2019ii','c2019i']
+const array = ['c2020i','c2012ii','pc1','pc2','pc3','pc4','c2012i','c2013ii','c2013i','c2014ii','c2014i','c2015ii','c2015i','c2020ii','c2017ii','c2017i','c2018ii','c2018i','c2019ii','c2019i']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){

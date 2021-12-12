@@ -126,7 +126,7 @@ if (config.ANTİLİNK == 'true') antilink = 'On'
 if (config.ANTİLİNK == 'false') antilink = 'Off'
 
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg, detectLinks: true, contextInfo: {mentionedJid: message.mention}, caption: `╭──────────────────╮
-   ` + config.BOT + `
+   ` + config.NBOT + `
 ╭──────────────────╯
 │
 │ ʜᴇʏ ᴜsᴇʀ ` + wish + `
